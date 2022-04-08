@@ -4,6 +4,8 @@ import ec2 = require('aws-cdk-lib/aws-ec2');
 import elbv2 = require('aws-cdk-lib/aws-elasticloadbalancingv2');
 import cdk = require('aws-cdk-lib');
 
+export AWS_ACCESS_KEY_ID ="asd"
+export AWS_SECRET_ACCESS_KEY ="asd"
 class LoadBalancerStack extends cdk.Stack {
   constructor(app: cdk.App, id: string) {
     super(app, id);
