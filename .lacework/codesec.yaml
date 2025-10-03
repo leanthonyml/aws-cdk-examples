@@ -1,0 +1,38 @@
+default:
+    iac:
+        enabled: true
+        pullRequest:
+            auditMode: false
+            commentOnlyHighAndCritical: false
+            comments: false
+        scan:
+            autofix: false
+            checkov: true
+            checkovModuleDownload: false
+            cloudformation: true
+            dockerfile: true
+            exceptions: []
+            helm: true
+            kubernetes: true
+            kustomize: true
+            opal: true
+            terraform: true
+            terraformPlan: true
+            tfsec: true
+    sca:
+        enabled: true
+        pullRequest:
+            auditMode: false
+            commentOnlyHighAndCritical: false
+            comments: false
+        scan:
+            acf: false
+            acfLocations: 5
+            acfLocationsFull: []
+            exceptions: []
+            licenseDetection: true
+            linesOfCode: true
+            sast: true
+            scr: true
+            secret: false
+            vulnEvaluation: true
